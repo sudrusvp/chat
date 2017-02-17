@@ -9,6 +9,7 @@ from flask import Flask
 from flask import render_template
 from flask import request, url_for, make_response
 import logging
+import apiai
 
 
 # Flask app should start in global layout
