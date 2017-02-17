@@ -5,6 +5,7 @@ $(function(){
 	var tail = "</div> </div> </div>";
 		
 	function send() {
+		console.log("inside send")
 		var data = {
 			"message" : $("#message").val(),
 			
@@ -14,8 +15,10 @@ $(function(){
 
 		$(".chatdiv").animate({ scrollTop: $('.chatdiv').prop("scrollHeight")}, 1000);
 		$("#message").val("");
-
+		
+		console.log("calling..")
 		$.post("/",data,function(res){
+			console.log("inside response")
 			console.log(res)
 
 
@@ -38,6 +41,7 @@ $(function(){
 	});
 
 	$("#send").click(function(event){
+		console.log("send")
 		if( $("#message").val() != "")
 			send()
 	})

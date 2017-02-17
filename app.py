@@ -8,6 +8,7 @@ import sys
 from flask import Flask
 from flask import render_template
 from flask import request, url_for, make_response
+import logging
 
 
 # Flask app should start in global layout
@@ -24,13 +25,15 @@ def main_page():
 
 		
 	elif request.method == 'POST':
+		logging.info("inside post")
+		
 		ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
 		req = ai.text_request()
 		req.query = request.form['message']
 		res = req.getresponse()
 		response_message = res.read()
 		response_message = json.loads(response_message)
-
+		
 		if response_message["result"]['parameters'].has_key('result') :
 			return str(response_message["result"]['parameters']['result'])
 		else:
