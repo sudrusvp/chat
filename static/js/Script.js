@@ -1,7 +1,7 @@
 $(function(){
 
-	var sentHead = "<div class='row' style='margin: 5px 0px'> <div class='col-sm-offset-4 col-sm-8 text-right'> <div class='sent text-left'>";
-	var receivedHead = "<div class='row' style='margin: 5px 0px;bottom:15px;'> <div class='col-sm-8 text-left'> <div class='received text-left'>";
+	var sentHead = "<div class='row' style='margin: 5px 0px;bgColor:gray'> <div class='col-sm-offset-4 col-sm-8 text-right'> <div class='sent text-left'>";
+	var receivedHead = "<div class='row' style='margin: 5px 0px;bottom:15px;bgColor:gray'> <div class='col-sm-8 text-left'> <div class='received text-left'>";
 	var tail = "</div> </div> </div>";
 		
 	function send() {
