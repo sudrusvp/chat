@@ -48,7 +48,9 @@ def webhook():
 			"data": {"speech":"<a href='www.google.com'>GOOGLE</a>" }
 			}
 	res = json.dumps(res, indent=4)
+	print res
 	r = make_response(res)
+	
 	r.headers['Content-Type'] = 'application/json'
 	return r
 
