@@ -26,7 +26,7 @@ def main_page():
 
 		
 	elif request.method == 'POST':
-		logging.info("inside post")
+		print("inside post")
 		
 		ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
 		req = ai.text_request()
@@ -34,8 +34,8 @@ def main_page():
 		res = req.getresponse()
 		response_message = res.read()
 		response_message = json.loads(response_message)
-		logging.info("purna res : "+str(response_message) +"__________")
-		logging.info( str(response_message["result"]['fulfillment']['speech'] ) )
+		print("purna res : "+str(response_message) +"__________")
+		print( str(response_message["result"]['fulfillment']['speech'] ) )
 		return response_message["result"]['fulfillment']['speech']
 
 
