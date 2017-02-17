@@ -11,7 +11,7 @@ from flask import request, url_for, make_response
 
 
 # Flask app should start in global layout
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 @app.route("/", methods=['GET', 'POST'])
 def main_page():
