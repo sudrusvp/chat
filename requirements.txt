@@ -1,3 +1,3 @@
 Flask==0.10.1
 numpy==1.12.0
-apiai==latest
+apiai==1.2.3
