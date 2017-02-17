@@ -44,7 +44,7 @@ def webhook():
 	req = request.get_json(silent=True, force=True)
 	print("Inside webhook")
 	res = {"speech": "<a href='www.google.com'>GOOGLE</a>",
-			"displayText": "GOOGLE",
+			"displayText": "<a href='www.google.com'>GOOGLE</a>",
 			"data": {"speech":"<a href='www.google.com'>GOOGLE</a>" }
 			}
 	res = json.dumps(res, indent=4)
