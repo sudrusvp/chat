@@ -40,7 +40,7 @@
 	padding-right: 20px;
 	padding-left: 30px;
 	background: #245580;
-	color: white;
+	color: black;
 	border-radius: 5px;
 	display: inline-block;
 }
@@ -65,7 +65,7 @@
 	padding: 10px;
 	padding-left: 30px;
 	background: #507ea7;
-	color: white;
+	color: black;
 	border-radius: 5px;
 	display: inline-block;
 }
@@ -92,7 +92,7 @@
 th,td{
 	padding: 3px;
     border: 1px solid white;
-    background: #245580;
+    background: red;
 }
 
 .micspan {
