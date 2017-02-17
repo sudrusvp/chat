@@ -215,10 +215,13 @@ body {
 		</div>
 		<div class="title">Chat</div>
 	</div>
-	<div class="chatdiv"></div>
-	<div class="bottom_wrapper clearfix">
+	
+	<div class="chatdiv">  </div>
+	
+	
+	
 		<div class="message_input_wrapper">
-			<input name="message" id="message" class="message_input" placeholder="Type your message here..." />
+			<input type ="text" name="message" id="message" class="message_input" placeholder="Type your message here..." />
 		</div>
 		<div class="send_message">
 			<div class="icon"></div>
@@ -249,11 +252,6 @@ $(function(){
 			
 		};
 
-		//$('.chatdiv').append(sentHead+data.message+tail);
-
-/*		$(receivedHead+"HEllo"+tail).hide().appendTo('.chatdiv').show("puff", {times : 3}, 200);
-		$(".chatdiv").animate({ scrollTop: $('.chatdiv').prop("scrollHeight")}, 1000);
-*/
 		$(sentHead+data.message+tail).hide().appendTo('.chatdiv').show("puff", {times : 3}, 200);
 
 		$(".chatdiv").animate({ scrollTop: $('.chatdiv').prop("scrollHeight")}, 1000);
@@ -267,13 +265,7 @@ $(function(){
 
 			$(".chatdiv").animate({ scrollTop: $('.chatdiv').prop("scrollHeight")}, 1000);
 
-			//var msg = new SpeechSynthesisUtterance();
-    		//var voices = window.speechSynthesis.getVoices();
-		    //msg.voiceURI = "native";
-		    //msg.text = res;
-		    //msg.lang = "en-US";
-		    //window.speechSynthesis.speak(msg);
-
+			
 		});
 
 	};
