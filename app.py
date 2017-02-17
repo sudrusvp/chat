@@ -35,10 +35,7 @@ def main_page():
 		response_message = res.read()
 		response_message = json.loads(response_message)
 		
-		if response_message["result"]['parameters'].has_key('result') :
-			return str(response_message["result"]['parameters']['result'])
-		else:
-			return response_message["result"]['fulfillment']['speech']
+		return response_message["result"]['fulfillment']['speech']
 
 
 @app.route('/webhook', methods=['POST'])
