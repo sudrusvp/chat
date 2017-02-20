@@ -18,7 +18,7 @@ app = Flask(__name__, static_url_path='/static')
 @app.route("/", methods=['GET', 'POST'])
 def main_page():
 
-	CLIENT_ACCESS_TOKEN = "167b91edd9fc489d86cd7be5e243ffcf"
+	CLIENT_ACCESS_TOKEN = "d896faa13fe34c1ea714a86531f913b5"
 
 	if request.method == 'GET':
 		
