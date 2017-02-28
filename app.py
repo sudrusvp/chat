@@ -26,16 +26,23 @@ def main_page():
 
 		
 	elif request.method == 'POST':
-		print("inside post")
-		
+		print("inside post1")
 		ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
+		print("inside post2")
 		req = ai.text_request()
+		print("inside post3")
 		req.query = request.form['message']
+		print("inside post4")
 		res = req.getresponse()
+		print("inside post5")
 		response_message = res.read()
+		print("inside post6")
 		response_message = json.loads(response_message)
+		print("inside post7")
 		print("purna res : "+str(response_message) +"__________")
+		print("inside post8")
 		print( str(response_message["result"]['fulfillment']['speech'] ) )
+		print("inside post9")
 		return response_message["result"]['fulfillment']['speech']
 
 
