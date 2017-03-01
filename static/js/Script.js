@@ -24,9 +24,9 @@ $(function(){
 
 
 			$(receivedHead+res+tail).hide().appendTo('.chatdiv').show("puff", {times : 3}, 200);
-
+			console.log("inside post2")
 			$(".chatdiv").animate({ scrollTop: $('.chatdiv').prop("scrollHeight")}, 1000);
-
+			console.log("inside post3")
 			});
 
 	};
