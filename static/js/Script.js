@@ -42,7 +42,7 @@ $(function(){
 	});
 
 	$("#send").click(function(event){
-		console.log("send")
+		//console.log("send")
 		if( $("#message").val() != "")
 			send()
 	})
