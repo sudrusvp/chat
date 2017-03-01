@@ -26,19 +26,19 @@ def main_page():
 
 		
 	elif request.method == 'POST':
-		print("inside post1")
+		#print("inside post1")
 		ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
-		print("inside post2")
+		#print("inside post2")
 		req = ai.text_request()
-		print("inside post3")
+		#print("inside post3")
 		req.query = request.form['message']
-		print("inside post4")
+		#print("inside post4")
 		res = req.getresponse()
-		print("inside post5")
+		#print("inside post5")
 		response_message = res.read()
-		print("inside post6")
+		#print("inside post6")
 		response_message = json.loads(response_message)
-		print("inside post7")
+		#print("inside post7")
 		#print("purna res : "+str(response_message) +"__________")
 		#print( str(response_message["result"]['fulfillment']['speech'] ) )
 		return response_message["result"]['fulfillment']['speech']
@@ -47,13 +47,13 @@ def main_page():
 @app.route('/webhook', methods=['POST'])
 def webhook():
 	req = request.get_json(silent=True, force=True)
-	print("Inside webhook")
+	#print("Inside webhook")
 	res = {"speech": "<a href='www.google.com'>GOOGLE</a>",
 			"displayText": "<a href='www.google.com'>GOOGLE</a>",
 			"data": {"speech":"<a href='www.google.com'>GOOGLE</a>" }
 			}
 	res = json.dumps(res, indent=4)
-	print res
+	#print res
 	r = make_response(res)
 	
 	r.headers['Content-Type'] = 'application/json'
