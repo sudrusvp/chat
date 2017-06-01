@@ -1,14 +1,8 @@
-.chatdiv{
-	height:360px ;
-	overflow-y: scroll;
-	background: #f1f1f1;
-	padding: 0px;
-}
 
 .chatdiv{
 
 	background: #f1f1f1;
-	height:360px ;
+	height:400px ;
 	overflow-y: scroll;
 	overflow-x: hidden;
     position: relative;
@@ -31,7 +25,7 @@
 .chatdiv::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	background-color: #245580;
+	background-color: #ADD8E6;
 }
 
 .sent{
@@ -39,8 +33,8 @@
 	padding: 10px;
 	padding-right: 20px;
 	padding-left: 30px;
-	background: #507ea7;
-	color: aqua;
+	background: white;
+	color: black;
 	border-radius: 5px;
 	display: inline-block;
 }
@@ -55,7 +49,7 @@
 	left: auto;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
-	border-left: 10px solid #507ea7;
+	border-left: 10px solid white;
  	right: 0px;
 
 }
@@ -64,8 +58,8 @@
 	margin: 10px 0px;
 	padding: 10px;
 	padding-left: 30px;
-	background: #507ea7;
-	color: aqua;
+	background: #ADD8E6;
+	color: black;
 	border-radius: 5px;
 	display: inline-block;
 }
@@ -78,14 +72,14 @@
 
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 10px solid #507ea7;
+    border-right: 10px solid #ADD8E6;
   	bottom: 9px;
   	left: 8px;
 }
 
 
 .chatheader{
-	background: #245580;
+	background: #ADD8E6;
 	padding: 10px;
 } 
 
@@ -114,6 +108,9 @@ th,td{
 	color: #fd2a2a;
 	cursor:pointer;
 }
+
+
+
 
 
 
